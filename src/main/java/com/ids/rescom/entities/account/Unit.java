@@ -10,11 +10,18 @@ public class Unit {
 
 	@Id
     @GeneratedValue(strategy=GenerationType.AUTO)
-	private int id;
+	private Long id;
 	private String block;
 	private String floor;
 	private String number;
+	private String type;
 	
+	public Long getId() {
+		return id;
+	}
+	public void setId(Long id) {
+		this.id = id;
+	}
 	public String getBlock() {
 		return block;
 	}
@@ -33,13 +40,11 @@ public class Unit {
 	public void setNumber(String number) {
 		this.number = number;
 	}
-	public int getId() {
-		return id;
+	public String getType() {
+		return type;
 	}
-	public void setId(int id) {
-		this.id = id;
+	public void setType(String type) {
+		this.type = type;
 	}
-	
-	
 	
 }

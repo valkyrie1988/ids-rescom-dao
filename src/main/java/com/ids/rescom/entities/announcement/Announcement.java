@@ -16,14 +16,19 @@ public class Announcement {
 	
 	private Date createDate;
 	private Date lastUpdate;
+	private String startDate;
+	private String startTime;
+	private String endDate;
+	private String endTime;
 	
-	private int sequence;
 	private String title;
-	private String description;
+	private String shortDesc;
+	private String longDesc;
 	private String href;
 	private int type;
-	
 	private int importantLevel;
+	private int sequence;
+	private int status;
 	
 	public int getId() {
 		return id;
@@ -55,11 +60,17 @@ public class Announcement {
 	public void setTitle(String title) {
 		this.title = title;
 	}
-	public String getDescription() {
-		return description;
+	public String getShortDesc() {
+		return shortDesc;
 	}
-	public void setDescription(String description) {
-		this.description = description;
+	public void setShortDesc(String shortDesc) {
+		this.shortDesc = shortDesc;
+	}
+	public String getLongDesc() {
+		return longDesc;
+	}
+	public void setLongDesc(String longDesc) {
+		this.longDesc = longDesc;
 	}
 	public String getHref() {
 		return href;
@@ -79,7 +90,34 @@ public class Announcement {
 	public void setImportantLevel(int importantLevel) {
 		this.importantLevel = importantLevel;
 	}
-	
-	
-	
+	public String getStartDate() {
+		return startDate;
+	}
+	public void setStartDate(String startDate) {
+		this.startDate = startDate;
+	}
+	public String getEndDate() {
+		return endDate;
+	}
+	public void setEndDate(String endDate) {
+		this.endDate = endDate;
+	}
+	public String getStartTime() {
+		return startTime;
+	}
+	public void setStartTime(String startTime) {
+		this.startTime = startTime;
+	}
+	public String getEndTime() {
+		return endTime;
+	}
+	public void setEndTime(String endTime) {
+		this.endTime = endTime;
+	}
+	public int getStatus() {
+		return status;
+	}
+	public void setStatus(int status) {
+		this.status = status;
+	}
 }
