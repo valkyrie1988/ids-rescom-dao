@@ -1,5 +1,7 @@
 package com.ids.rescom.entities.account;
 
+import java.util.Date;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -12,9 +14,9 @@ public class Profile {
     @GeneratedValue(strategy=GenerationType.AUTO)
 	private long id;
 	private String name;
-	private String email;
+	private Byte image;
 	private String deviceId;
-	
+	private Date lastLoggedIn;
 	
 	public long getId() {
 		return id;
@@ -28,17 +30,23 @@ public class Profile {
 	public void setName(String name) {
 		this.name = name;
 	}
-	public String getEmail() {
-		return email;
+	public Byte getImage() {
+		return image;
 	}
-	public void setEmail(String email) {
-		this.email = email;
+	public void setImage(Byte image) {
+		this.image = image;
 	}
 	public String getDeviceId() {
 		return deviceId;
 	}
 	public void setDeviceId(String deviceId) {
 		this.deviceId = deviceId;
+	}
+	public Date getLastLoggedIn() {
+		return lastLoggedIn;
+	}
+	public void setLastLoggedIn(Date lastLoggedIn) {
+		this.lastLoggedIn = lastLoggedIn;
 	}
 	
 

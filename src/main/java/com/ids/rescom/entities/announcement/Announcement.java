@@ -16,13 +16,14 @@ public class Announcement {
 	
 	private Date createDate;
 	private Date lastUpdate;
+	private Date startDate;
+	private Date endDate;
 	
 	private int sequence;
 	private String title;
 	private String description;
 	private String href;
 	private int type;
-	
 	private int importantLevel;
 	
 	public int getId() {
@@ -78,6 +79,18 @@ public class Announcement {
 	}
 	public void setImportantLevel(int importantLevel) {
 		this.importantLevel = importantLevel;
+	}
+	public Date getStartDate() {
+		return startDate;
+	}
+	public void setStartDate(Date startDate) {
+		this.startDate = startDate;
+	}
+	public Date getEndDate() {
+		return endDate;
+	}
+	public void setEndDate(Date endDate) {
+		this.endDate = endDate;
 	}
 	
 	
