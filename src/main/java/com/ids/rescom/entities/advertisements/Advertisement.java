@@ -10,7 +10,7 @@ public class Advertisement {
 
 	@Id
     @GeneratedValue(strategy=GenerationType.AUTO)
-	private int id;
+	private long id;
 	private int sequence;
 	private String name;
 	private String description;
@@ -18,10 +18,10 @@ public class Advertisement {
 	private String resourceURL;
 	private int type;
 	
-	public int getId() {
+	public long getId() {
 		return id;
 	}
-	public void setId(int id) {
+	public void setId(long id) {
 		this.id = id;
 	}
 	public int getSequence() {

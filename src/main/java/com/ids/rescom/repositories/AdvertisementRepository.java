@@ -11,4 +11,5 @@ import com.ids.rescom.entities.advertisements.Advertisement;
 public interface AdvertisementRepository extends CrudRepository<Advertisement, Long>{
 	
 	public List<Advertisement> findAllByOrderBySequence();
+	public Advertisement findOneById(Long id);
 }
