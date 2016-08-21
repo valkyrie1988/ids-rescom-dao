@@ -55,6 +55,4 @@ public class Profile {
 	public void setLastLoggedIn(Date lastLoggedIn) {
 		this.lastLoggedIn = lastLoggedIn;
 	}
-	
-
 }
