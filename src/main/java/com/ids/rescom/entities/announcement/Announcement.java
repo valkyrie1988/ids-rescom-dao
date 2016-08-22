@@ -16,14 +16,17 @@ public class Announcement {
 	
 	private Date createDate;
 	private Date lastUpdate;
+	private Date startDate;
+	private Date endDate;
 	
-	private int sequence;
 	private String title;
-	private String description;
+	private String shortDesc;
+	private String longDesc;
 	private String href;
 	private int type;
-	
 	private int importantLevel;
+	private int sequence;
+	private int status;
 	
 	public int getId() {
 		return id;
@@ -55,11 +58,17 @@ public class Announcement {
 	public void setTitle(String title) {
 		this.title = title;
 	}
-	public String getDescription() {
-		return description;
+	public String getShortDesc() {
+		return shortDesc;
 	}
-	public void setDescription(String description) {
-		this.description = description;
+	public void setShortDesc(String shortDesc) {
+		this.shortDesc = shortDesc;
+	}
+	public String getLongDesc() {
+		return longDesc;
+	}
+	public void setLongDesc(String longDesc) {
+		this.longDesc = longDesc;
 	}
 	public String getHref() {
 		return href;
@@ -79,7 +88,22 @@ public class Announcement {
 	public void setImportantLevel(int importantLevel) {
 		this.importantLevel = importantLevel;
 	}
-	
-	
-	
+	public Date getStartDate() {
+		return startDate;
+	}
+	public void setStartDate(Date startDate) {
+		this.startDate = startDate;
+	}
+	public Date getEndDate() {
+		return endDate;
+	}
+	public void setEndDate(Date endDate) {
+		this.endDate = endDate;
+	}
+	public int getStatus() {
+		return status;
+	}
+	public void setStatus(int status) {
+		this.status = status;
+	}
 }
