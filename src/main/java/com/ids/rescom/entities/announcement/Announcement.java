@@ -16,10 +16,8 @@ public class Announcement {
 	
 	private Date createDate;
 	private Date lastUpdate;
-	private String startDate;
-	private String startTime;
-	private String endDate;
-	private String endTime;
+	private Date startDate;
+	private Date endDate;
 	
 	private String title;
 	private String shortDesc;
@@ -90,29 +88,17 @@ public class Announcement {
 	public void setImportantLevel(int importantLevel) {
 		this.importantLevel = importantLevel;
 	}
-	public String getStartDate() {
+	public Date getStartDate() {
 		return startDate;
 	}
-	public void setStartDate(String startDate) {
+	public void setStartDate(Date startDate) {
 		this.startDate = startDate;
 	}
-	public String getEndDate() {
+	public Date getEndDate() {
 		return endDate;
 	}
-	public void setEndDate(String endDate) {
+	public void setEndDate(Date endDate) {
 		this.endDate = endDate;
-	}
-	public String getStartTime() {
-		return startTime;
-	}
-	public void setStartTime(String startTime) {
-		this.startTime = startTime;
-	}
-	public String getEndTime() {
-		return endTime;
-	}
-	public void setEndTime(String endTime) {
-		this.endTime = endTime;
 	}
 	public int getStatus() {
 		return status;
