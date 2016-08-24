@@ -9,5 +9,5 @@ import com.ids.rescom.entities.announcement.Announcement;
 
 @Repository
 public interface AnnouncementRepository extends CrudRepository<Announcement, Long> {
-	public List<Announcement> findAllByOrderBySequence();
+	public List<Announcement> findByStatusOrderBySequence(int status);
 }
