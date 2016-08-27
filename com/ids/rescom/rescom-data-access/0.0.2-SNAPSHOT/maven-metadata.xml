@@ -2,23 +2,23 @@
 <metadata modelVersion="1.1.0">
   <groupId>com.ids.rescom</groupId>
   <artifactId>rescom-data-access</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
+  <version>0.0.2-SNAPSHOT</version>
   <versioning>
     <snapshot>
-      <timestamp>20160827.043753</timestamp>
+      <timestamp>20160827.044210</timestamp>
       <buildNumber>1</buildNumber>
     </snapshot>
-    <lastUpdated>20160827043753</lastUpdated>
+    <lastUpdated>20160827044210</lastUpdated>
     <snapshotVersions>
       <snapshotVersion>
         <extension>jar</extension>
-        <value>0.0.1-20160827.043753-1</value>
-        <updated>20160827043753</updated>
+        <value>0.0.2-20160827.044210-1</value>
+        <updated>20160827044210</updated>
       </snapshotVersion>
       <snapshotVersion>
         <extension>pom</extension>
-        <value>0.0.1-20160827.043753-1</value>
-        <updated>20160827043753</updated>
+        <value>0.0.2-20160827.044210-1</value>
+        <updated>20160827044210</updated>
       </snapshotVersion>
     </snapshotVersions>
   </versioning>
